@@ -1,0 +1,28 @@
+require('dotenv').config();
+const express = require("express")
+const app = express();
+const listen =require("./config/listen");
+const database = require("./config/database")
+const mongoose = require("mongoose")
+
+
+
+
+let result = " "
+for (let i = 1; i <= 5; i++) {
+    result = result + "**";
+    console.log(result)
+
+}
+
+
+
+app.get('/', (req, res) => {
+    res.send("result :" + result)
+})
+//listen export//
+listen(app);
+
+
+//mongoose exports
+database(mongoose);
