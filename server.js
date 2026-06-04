@@ -16,6 +16,15 @@ for (let i = 1; i <= 5; i++) {
 }
 
 
+let store = " "
+for (let w = 1; w <= 5; w++) {
+    store  = store  + "@";
+    console.log(store )
+
+}
+
+
+
 
 app.get('/', (req, res) => {
     res.send("result :" + result)
