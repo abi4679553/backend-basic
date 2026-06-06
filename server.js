@@ -23,6 +23,13 @@ for (let w = 1; w <= 5; w++) {
 
 }
 
+let world = "";
+for(let u =1;u<=8;u++){
+    world = world + "#"
+    console.log(world)
+}
+
+
 
 
 
