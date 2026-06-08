@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require("express")
 const app = express();
-const listen =require("./config/listen");
+const listen = require("./config/listen");
 const database = require("./config/database")
 const mongoose = require("mongoose")
 
@@ -18,17 +18,20 @@ for (let i = 1; i <= 5; i++) {
 
 let store = " "
 for (let w = 1; w <= 5; w++) {
-    store  = store  + "@";
-    console.log(store )
+    store = store + "@";
+    console.log(store)
 
 }
 
 let world = "";
-for(let u =1;u<=8;u++){
+for (let u = 1; u <= 8; u++) {
     world = world + "#"
     console.log(world)
 }
 
+for (s = 1; s <= 5; s++) {
+    console.log("#%@&*")
+}
 
 
 
